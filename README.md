@@ -4,6 +4,8 @@
 
 This is a Node.js project that integrates with the Stripe API. It includes services for creating customers, payment methods, and payments.
 
+Postman [https://www.postman.com/satellite-architect-97525853/stripe-api-doc/overview](https://www.postman.com/satellite-architect-97525853/stripe-api-doc/overview)
+
 ## Requirements
 
 - Node.js (v18 or higher)
