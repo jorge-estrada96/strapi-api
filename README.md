@@ -39,18 +39,18 @@ STRIPE_SECRET_KEY=your_stripe_secret_key
 
 * Start the application
 
-```bash
+```makefile
 npm run start
 ```
 
 * Develop with auto-reloading:
 
-```bash
+```makefile
 npm run dev
 ```
 
 * Run tests
 
-```bash
+```makefile
 npm run test
 ```
