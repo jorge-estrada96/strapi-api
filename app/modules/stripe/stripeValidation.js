@@ -1,4 +1,4 @@
-const Joi = require('joi');
+const Joi = require("joi");
 
 const customerSchema = Joi.object({
   email: Joi.string().email().required(),
@@ -10,17 +10,19 @@ const paymentMethodSchema = Joi.object({
   customerId: Joi.string().required(),
 });
 
-const paymentSchema = Joi.object({
+const paymentIntentSchema = Joi.object({
   customerId: Joi.string().required(),
-  paymentMethodId: Joi.string().required(),
   amount: Joi.number().min(1).required(),
   currency: Joi.string().length(3).required(),
 });
 
+const confirmPaymentIntentSchema = Joi.object({
+  paymentMethodId: Joi.string().required(),
+});
 
 module.exports = {
   customerSchema,
   paymentMethodSchema,
-  paymentSchema,
+  paymentIntentSchema,
+  confirmPaymentIntentSchema,
 };
-
