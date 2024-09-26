@@ -65,6 +65,10 @@ const createPaymentIntent = async (payload) => {
     customer: validatedPayment.customerId,
     amount: validatedPayment.amount * 100,
     currency: validatedPayment.currency,
+    automatic_payment_methods: {
+      allow_redirects: "never",
+      enabled: true,
+    },
   });
 
   return paymentIntent;
