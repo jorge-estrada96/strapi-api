@@ -6,7 +6,7 @@ This is a Node.js project that integrates with the Stripe API. It includes servi
 
 Postman [https://www.postman.com/satellite-architect-97525853/stripe-api-doc/overview](https://www.postman.com/satellite-architect-97525853/stripe-api-doc/overview)
 
-Develop estimated time: 2 **hours**
+Estimated developed time: **2.5 hours**
 
 ## Requirements
 
